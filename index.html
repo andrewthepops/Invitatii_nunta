@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Wedding</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎼 You Are Invited 🎼</h1>
+  <h2>To the Wedding of</h2>
+
+  <p class="names">Alex & Maria</p>
+
+  <p class="details">
+    Join us for a night of elegance, music, and love<br>
+    June 20, 2026 • 17:00<br>
+    Grand Ballroom
+  </p>
+
+  <div class="divider">♪ ♫ ♪</div>
+
+  <form id="rsvp-form" action="https://formspree.io/f/YOUR_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    
+    <select name="attendance" required>
+      <option value="">Will you attend?</option>
+      <option value="Yes">Joyfully Accept</option>
+      <option value="No">Regretfully Decline</option>
+    </select>
+
+    <input type="number" name="guests" placeholder="Number of Guests">
+
+    <textarea name="message" placeholder="Song request or message"></textarea>
+
+    <button type="submit">Send RSVP 🎻</button>
+  </form>
+
+  <p id="status"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
